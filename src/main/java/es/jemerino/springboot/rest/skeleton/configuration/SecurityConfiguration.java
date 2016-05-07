@@ -40,7 +40,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		web.ignoring().antMatchers(Mapping.H2_CONSOLE);
+		web.ignoring().antMatchers(Mapping.H2_CONSOLE_SEC);
 
 	}
 
