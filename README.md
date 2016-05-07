@@ -2,7 +2,7 @@
 
 ### Structure
 
-This project contains the basic structure to start building a RESTful API with SpringBoot. As you can see in the following diagram, the project contains three main parts:
+This project contains the basic structure to start building a RESTful API with Spring Boot. As you can see in the following diagram, the project contains three main parts:
 
 1. **Controller**: it will be the attendant of serve all the requests which are made to our API. Its main object will be delegate those requests to the corresponding service and serve the response or error as appropiate.
 2. **Service**: it will interact with de appropiate DAO or maybe with another service from any other system in orden to generate the response to the request.
