@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import es.jemerino.springboot.rest.skeleton.constant.Mapping;
-import es.jemerino.springboot.rest.skeleton.constant.Produces;
+import es.jemerino.springboot.rest.skeleton.constant.ContentType;
 import es.jemerino.springboot.rest.skeleton.service.HelloWorldService;
 
 @RestController
@@ -21,7 +21,7 @@ public class HelloWorldController {
 
 	@RequestMapping(value = Mapping.GET_HELLO_WORLD, 
 					method = RequestMethod.GET, 
-					produces = Produces.TEXT_PLAIN)
+					produces = ContentType.TEXT_PLAIN)
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	public String getHelloWorld() {
