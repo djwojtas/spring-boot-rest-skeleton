@@ -2,10 +2,10 @@
 
 ### Structure
 
-This project contains the basic structure to start building a RESTful API with Spring Boot. As you can see in the following diagram the project is structured in three main parts:
+This project contains the basic structure to start building a RESTful API with SpringBoot. As you can see in the following diagram, the project contains three main parts:
 
-1. **Controller**: it will be the attendant of all the requests which be made to our API. It's main object will be delegate those requests to the corresponding service and serve the response or error as appropiate.
-2. **Service**: it will interact with de appropiate DAO or maybe with another service from other system in orden to generate the response to the request.
+1. **Controller**: it will be the attendant of serve all the requests which are made to our API. Its main object will be delegate those requests to the corresponding service and serve the response or error as appropiate.
+2. **Service**: it will interact with de appropiate DAO or maybe with another service from any other system in orden to generate the response to the request.
 3. **DAO/Service**: it will obtain the necessary data to generate the response, either from our own database or from another system.
 
 <p align="center">
@@ -18,7 +18,7 @@ This project contains the basic structure to start building a RESTful API with S
 
 ### How-To use
 
-##### 1. Access token
+##### 1. Obtaining an access token
 _Request_
 ````
 POST /oauth/token HTTP/1.1
@@ -43,7 +43,7 @@ _Response_
   "scope" : "read write"
 }
 ```
-##### 2. Refresh token
+##### 2. Obtaining a refresh token
 _Request_
 ````
 POST /oauth/token HTTP/1.1
@@ -68,7 +68,7 @@ _Response_
 }
 ```
 
-##### 3. Logout
+##### 3. Invalidating an access token
 
 _Request_
 ```
@@ -77,7 +77,7 @@ Host: localhost:8080
 Authorization: Bearer <access_token>
 ```
 
-##### 4. Access to secure path
+##### 4. Accessing to a securized path
 _Request_
 ````
 GET /api/v1/helloWorld HTTP/1.1
@@ -96,4 +96,4 @@ Hello World!
 Initial version
 
 ### License
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
+This project is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
