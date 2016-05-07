@@ -18,14 +18,14 @@ public class HelloWorldController {
 
 	@Autowired
 	private HelloWorldService helloWorldService;
-	
+
 	@RequestMapping(value = Mapping.GET_HELLO_WORLD, 
-					method = RequestMethod.GET,
+					method = RequestMethod.GET, 
 					produces = Produces.TEXT_PLAIN)
 	@ResponseStatus(HttpStatus.OK)
-	@ResponseBody 
+	@ResponseBody
 	public String getHelloWorld() {
 		return helloWorldService.getHelloWorld();
 	}
-	
+
 }
