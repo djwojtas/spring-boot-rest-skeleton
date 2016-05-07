@@ -20,8 +20,8 @@ public class HelloWorldController {
 	private HelloWorldService helloWorldService;
 
 	@RequestMapping(value = Mapping.GET_HELLO_WORLD, 
-					method = RequestMethod.GET, 
-					produces = ContentType.TEXT_PLAIN)
+			method = RequestMethod.GET, 
+			produces = ContentType.TEXT_PLAIN)
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	public String getHelloWorld() {
