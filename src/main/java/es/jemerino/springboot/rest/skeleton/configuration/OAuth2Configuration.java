@@ -106,9 +106,9 @@ public class OAuth2Configuration {
 				.withClient(clientId)
 				.scopes(scopes)
 				.authorities(Authorities.ROLE_USER.name())
-			    .authorizedGrantTypes(grantTypes)
-			    .secret(clientSecret)
-			    .accessTokenValiditySeconds(tokenValiditySeconds);
+				.authorizedGrantTypes(grantTypes)
+				.secret(clientSecret)
+				.accessTokenValiditySeconds(tokenValiditySeconds);
 		}
 
 	}
